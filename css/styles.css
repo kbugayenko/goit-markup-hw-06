@@ -523,7 +523,7 @@ ul {
   align-items: baseline;
 }
 
-.foot-list:last-child {
+.foot-list {
   margin-left: 70px;
 }
 
@@ -558,6 +558,33 @@ ul {
 .footer-social:focus {
   color: var(--primary-white-color);
   background-color: var(--button-color);
+}
+
+/* Оформление рассылки */
+
+.modal-svg {
+  fill: currentColor;
+}
+
+.podpis {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  background-color: var(--button-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  padding-left: 29px;
+}
+
+.email-icons {
+  margin: 13px 28px 13px 10px;
+  fill: currentColor;
 }
 
 /* Модальное окно */
@@ -608,10 +635,6 @@ ul {
   margin: 0;
   border: 0;
   border-radius: 50%;
-}
-
-.modal-svg {
-  fill: currentColor;
 }
 
 /* Описание для Портфолио */
