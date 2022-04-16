@@ -660,8 +660,9 @@ ul {
   margin: 0;
   border: 0;
   border-radius: 50%;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
-
 /* Оформление модального окна (форма) */
 
 .form-title {
