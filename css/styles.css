@@ -658,18 +658,22 @@ ul {
 
   padding: 0;
   margin: 0;
-  border: 0;
   border-radius: 50%;
   background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
+
+.close:focus-within {
+  color: var(--button-color);
+}
+
 /* Оформление модального окна (форма) */
 
 .form-title {
   margin: 40px 40px 28px;
   font-style: normal;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 24px;
   line-height: 1.15;
 
   color: #212121;
@@ -685,30 +689,61 @@ ul {
 
   margin-top: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
-  box-sizing: border-box;
+
   border-radius: 4px;
 }
 
 .form-input {
-  background-color: transparent;
   border: none;
-  padding: 11px 0px;
+  width: 100%;
+  padding: 12px 42px;
+  outline: transparent;
+}
+
+.form-thumb:focus-within {
+  color: var(--button-color);
 }
 
 .form-icons {
   position: absolute;
   top: 50%;
   left: 12px;
+  fill: currentColor;
 
   transform: translateY(-50%);
 }
+
+.checkbox {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
 textarea {
+  width: 100%;
   height: 120px;
+  resize: none;
+}
+
+.form-thumb.check {
+  border: none;
+  width: 100%;
+  padding: 12px 42px;
+}
+
+.form-thumb.check .form-icons {
+  border-radius: 2px;
+  border: 1px solid black;
+}
+
+.checkbox:checked + .form-icons {
+  background-color: #2196f3;
 }
 
 .button-sub {
   display: flex;
-  margin: 30px auto;
+  margin: 30px auto 40px;
   padding: 10px 55px;
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
