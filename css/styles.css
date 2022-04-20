@@ -644,6 +644,8 @@ ul {
   min-width: 528px;
   min-height: 581px;
 
+  padding: 30px 40px;
+
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -665,6 +667,9 @@ ul {
 
 .close:focus-within {
   color: var(--button-color);
+
+  transition: color var(--animation);
+}
 }
 
 /* Оформление модального окна (форма) */
@@ -680,7 +685,7 @@ ul {
 }
 
 .form-field {
-  margin: 30px 40px;
+  /* margin: 30px 40px; */
 }
 
 .form-thumb {
@@ -694,9 +699,13 @@ ul {
 }
 
 .form-input {
+  margin-top: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+
+  border-radius: 4px;
   border: none;
   width: 100%;
-  padding: 12px 42px;
+  padding: 12px 12px;
   outline: transparent;
 }
 
