@@ -644,7 +644,7 @@ ul {
   min-width: 528px;
   min-height: 581px;
 
-  padding: 30px 40px;
+  padding: 40px 39px 40px 41px;
 
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -657,25 +657,23 @@ ul {
   position: absolute;
   top: 8px;
   right: 8px;
-
+  height: 30px;
   padding: 0;
   margin: 0;
   border-radius: 50%;
   background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: color var(--animation), border var(--animation);
 }
 
 .close:focus-within {
   color: var(--button-color);
-
-  transition: color var(--animation);
-}
+  border: 1px solid var(--button-color);
 }
 
 /* Оформление модального окна (форма) */
 
 .form-title {
-  margin: 40px 40px 28px;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -684,34 +682,37 @@ ul {
   color: #212121;
 }
 
-.form-field {
-  /* margin: 30px 40px; */
+.form-label {
+  /* border: var(--button-color); */
 }
 
-.form-thumb {
+.form-field {
   position: relative;
   width: 100%;
-
-  margin-top: 4px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-
-  border-radius: 4px;
+  margin-top: 10px;
 }
 
 .form-input {
+  display: inline-block;
+  position: relative;
   margin-top: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
 
   border-radius: 4px;
-  border: none;
   width: 100%;
-  padding: 12px 12px;
+  padding: 12px 0px 12px 42px;
   outline: transparent;
 }
 
-.form-thumb:focus-within {
+.form-input:focus-within {
+  border: 1px solid #2196f3;
   color: var(--button-color);
 }
+/* 
+.form-thumb:focus-within {
+  color: var(--button-color);
+  border: 1px solid #2196f3;
+} */
 
 .form-icons {
   position: absolute;
@@ -735,7 +736,7 @@ textarea {
   resize: none;
 }
 
-.form-thumb.check {
+.form-field.check {
   border: none;
   width: 100%;
   padding: 12px 42px;
@@ -752,7 +753,8 @@ textarea {
 
 .button-sub {
   display: flex;
-  margin: 30px auto 40px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 10px 55px;
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
