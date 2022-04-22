@@ -619,7 +619,7 @@ ul {
   left: 0;
 
   width: 100vw;
-  height: 1024px;
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
 
   opacity: 1;
@@ -644,7 +644,7 @@ ul {
   min-width: 528px;
   min-height: 581px;
 
-  padding: 40px 39px 40px 41px;
+  padding: 40px;
 
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -667,7 +667,8 @@ ul {
   transition: color var(--animation);
 }
 
-.close:focus-within {
+.close:focus-within,
+.close:hover {
   color: var(--button-color);
 }
 
