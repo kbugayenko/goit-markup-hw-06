@@ -641,8 +641,8 @@ ul {
   left: 50%;
   transform: translate(-50%, -50%);
 
-  min-width: 528px;
-  min-height: 581px;
+  width: 528px;
+  height: 581px;
 
   padding: 40px;
 
@@ -677,7 +677,7 @@ ul {
 .form-title {
   font-style: normal;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 1.15;
 
   color: #212121;
@@ -747,7 +747,7 @@ textarea:focus-within {
 }
 
 .form-field.check {
-  padding: 12px 36px;
+  padding: 12px 0px 12px 36px;
 }
 
 .form-field.check .form-icons {
